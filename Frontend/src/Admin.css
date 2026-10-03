@@ -1,0 +1,138 @@
+
+.admin-page {
+    padding: 30px;
+    background: #f8fafc;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.admin-header {
+    width: 100%;
+    max-width: 850px;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.admin-header h1 {
+    margin: 0;
+    font-size: 26px;
+    color: #111827;
+}
+
+.admin-header p {
+    margin: 7px 0 0;
+    color: #6b7280;
+    font-size: 14px;
+}
+
+.admin-form {
+    background: white;
+    border: 1px solid #e5e7eb;
+    border-radius: 14px;
+    padding: 28px;
+    max-width: 850px;
+    box-sizing: border-box;
+}
+
+.form-section {
+    margin-bottom: 25px;
+}
+
+.form-section h2 {
+    margin: 0 0 18px;
+    font-size: 18px;
+    color: #111827;
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.form-group.full {
+    grid-column: 1 / -1;
+}
+
+.form-group label {
+    color: #374151;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 11px 12px;
+    border: 1px solid #e5e7eb;
+    border-radius: 7px;
+    font-size: 14px;
+    color: #374151;
+    font-family: inherit;
+}
+
+.form-group textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #ff7518;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    color: #9ca3af;
+}
+
+.form-bottom {
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 20px;
+    border-top: 1px solid #eeeeee;
+}
+
+.add-internship-btn {
+    background: #ff7518;
+    color: white;
+    border: none;
+    padding: 11px 20px;
+    border-radius: 7px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.add-internship-btn:hover {
+    background: #e9630b;
+}
+
+@media (max-width: 700px) {
+    .form-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .form-group.full {
+        grid-column: auto;
+    }
+
+    .admin-page {
+        padding: 20px;
+    }
+
+    .admin-form {
+        padding: 20px;
+    }
+}

@@ -1,0 +1,90 @@
+.signin-container {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #fff7ed, #ffffff);
+}
+
+.signin-subtitle {
+    color: #F97316;
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+
+.signin-container label {
+    width: 320px;
+    margin-bottom: 6px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #374151;
+}
+
+.signin-container input {
+    width: 320px;
+    height: 40px;
+    padding: 0 12px;
+    margin-bottom: 18px;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    outline: none;
+    box-sizing: border-box;
+    font-size: 15px;
+}
+
+.signin-container input:focus {
+    border-color: #F97316;
+    box-shadow: 0 0 0 3px rgba(249, 115, 22, 0.15);
+}
+
+.signin-container button:not(.google-btn) {
+    background-color: #F97316;
+    border-radius: 25px;
+    height: 42px;
+    width: 120px;
+    border: none;
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 8px;
+}
+
+.signin-container button:not(.google-btn):hover {
+    box-shadow: 0 5px 15px rgba(249, 115, 22, 0.3);
+}
+.google-btn {
+    width: 320px;
+    height: 44px;
+    margin-top: 12px;
+    background-color: white;
+    color: #374151;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    box-sizing: border-box;
+    transition: all 0.2s ease;
+}
+
+.google-icon {
+    flex-shrink: 0;
+}
+
+.google-btn:hover {
+    border-color: #ff7518;
+    background-color: #fff7ed;
+    box-shadow: 0 5px 15px rgba(249, 115, 22, 0.15);
+    transform: translateY(-1px);
+}
+
+.google-btn:active {
+    transform: translateY(0);
+}

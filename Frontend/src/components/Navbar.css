@@ -1,0 +1,49 @@
+.navbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    height:20px;
+    margin-top:20px;
+    margin-left:10px;
+    margin-right:10px;
+}
+.navbar input{
+    border-radius:20px;
+    height:40px;
+    width:500px;
+    border:2px solid black;
+    padding-left:10px;
+    
+}
+.auth-buttons {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.signin-btn,
+.signup-btn {
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 7px;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.signin-btn {
+    color: #f97316;
+    border: 1px solid #f97316;
+}
+
+.signin-btn:hover {
+    background-color: #fff7ed;
+}
+
+.signup-btn {
+    background-color: #f97316;
+    color: white;
+}
+
+.signup-btn:hover {
+    background-color: #ea580c;
+}
