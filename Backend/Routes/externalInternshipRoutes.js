@@ -5,10 +5,18 @@ const Internship = require("../models/Internship");
 router.get("/external-internships", async (req, res) => {
     try {
         const response = await fetch(
-            "https://www.themuse.com/api/public/jobs?page=1&level=Internship"
-        );
+    "https://www.themuse.com/api/public/jobs?page=1"
+);
 
-        const data = await response.json();
+if (!response.ok) {
+    const text = await response.text();
+    console.log("Muse API error:", response.status, text);
+    return res.status(response.status).json({
+        message: "Muse API request failed"
+    });
+}
+
+const data = await response.json();
 
         const internships = data.results.map((job) => ({
             _id: String(job.id),
