@@ -21,7 +21,7 @@ async function handleSubmit(e) {
     e.preventDefault();
 
     try {
-        const response = await fetch("http://localhost:3000/api/admin/internships", {
+        const response = await fetch("https://internfind-backend.onrender.com/api/admin/internships", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",

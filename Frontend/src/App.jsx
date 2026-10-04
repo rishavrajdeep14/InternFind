@@ -19,7 +19,7 @@ import { useState,useEffect } from "react";
 function DashboardLayout () {
 const [internships,setInternships] = useState([]);
     useEffect(() => {
-    fetch("http://localhost:3000/api/external-internships/")
+    fetch("https://internfind-backend.onrender.com/api/external-internships/")
         .then((res) => res.json())
         .then((data) => {
             setInternships(data);

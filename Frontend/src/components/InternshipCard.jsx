@@ -4,7 +4,7 @@ function InternshipCard({ internship, applied = false })  {
 
     async function handleApply() {
     try {
-        const response = await fetch("http://localhost:3000/api/applications", {
+        const response = await fetch("https://internfind-backend.onrender.comckend.onrender.comckend.onrender.comckend.onrender.comckend.onrender.comckend.onrender.comckend.onrender.comckend.onrender.comckend.onrender.comckend.onrender.comckend.onrender.comckend.onrender.com/api/applications", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",

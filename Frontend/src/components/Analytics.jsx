@@ -77,7 +77,7 @@ function Analytics() {
 
     const [applications,setApplications] = useState([]);
     useEffect(() => {
-        fetch("http://localhost:3000/api/applications", {
+        fetch("https://internfind-backend.onrender.com/api/applications", {
             headers: {
                 Authorization: `Bearer ${localStorage.getItem("token")}`
             }
