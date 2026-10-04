@@ -46,7 +46,7 @@ router.get(
             { expiresIn: "1h" }
         );
 
-        res.redirect(`http://localhost:5173/?token=${token}`);
+        res.redirect(`https://internfind-frontend.onrender.com/?token=${token}`);
     }
 );
 
