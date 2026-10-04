@@ -12,7 +12,7 @@ router.post(
                 userId: req.user._id,
                 role: req.user.role
             },
-            "internfind_secret",
+            process.env.JWT_SECRET,
             { expiresIn: "1h" }
         );
 
@@ -42,7 +42,7 @@ router.get(
                 userId: req.user._id,
                 role: req.user.role
             },
-            "internfind_secret",
+            process.env.JWT_SECRET,
             { expiresIn: "1h" }
         );
 

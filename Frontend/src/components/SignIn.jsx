@@ -21,7 +21,7 @@ function SignIn () {
 
     const handleSubmit = async (e) => {
         e.preventDefault();
-        const response =  await fetch("http://localhost:3000/api/signin",{
+        const response =  await fetch("https://internfind-backend.onrender.com/api/signin",{
         method :"POST",
         headers : {
             "Content-Type" : "application/json"
@@ -65,7 +65,7 @@ function SignIn () {
     type="button"
     className="google-btn"
     onClick={() => {
-        window.location.href = "http://localhost:3000/api/auth/google";
+        window.location.href = "https://internfind-backend.onrender.com/api/auth/google";
     }}
 >
     <svg
